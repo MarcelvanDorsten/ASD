@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>ASD</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<body>
+  <nav class="w3-bar w3-red w3-large">
+  <a href="#" class="w3-bar-item w3-button">Home</a>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+</nav>
+<h2 class="w3-center">Automatic Slideshow</h2>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="img_la.jpg" style="width:100%">
+  <img class="mySlides" src="img_ny.jpg" style="width:100%">
+  <img class="mySlides" src="img_chicago.jpg" style="width:100%">
+</div>
+    <header class="w3container w3=light=grey">
+    <h1 class="w3-jumbo">My first W3.CSS website!</h1> 
+    <p class="w3-xxlarge">This site will grow as we add more ...</p> 
+  </header>
+    
+  <div class="w3container">  
+    <p>This is another paragraph.</p> 
+    <p>This is a paragraph.</p> 
+    <p>This is another paragraph.</p>
+  </div> 
+  
+ <div class="w3-row-padding">
+    <div class="w3-third">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+  <div class="w3-third">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+  <div class="w3-third">
+  <p><strong>On a large screen the content will be displayed as a 3-column layout. On a small screen the content will adjust itself into a single-column. Resize the browser window to see the effect.</strong></p>
+  </div>
+</div>
+    
+    
+  <footer class="w3-container">
+    <p>This is my footer</p>
+  </footer>    
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+   
+</body>
+
+</html>
